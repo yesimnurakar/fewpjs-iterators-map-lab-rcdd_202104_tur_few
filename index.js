@@ -12,14 +12,15 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials;
-  return tutorials.map((arr) => {
-    finalArr = arr.split(' ');
-    for(let i = 0; i < finalArrarr.length; i++){
-      finalArr[i] = finalArr[i].charAt(0).toUpperCase() + finalArr[i].slice(1);
-    }
-    finalArr = finalArr.join(' ');
-    return finalArr;
-  });
+  return tutorials
 }
+ function titleCased() {
+   return tutorials.map(sentence => {
+     let splitSentence = sentence.split(" ");
+     for (let i=0;i < splitSentence.length;i++){
+       splitSentence[i] = splitSentence[i].charAt(0).toUpperCase() + splitSentence[i].slice(1);
+     }
+     return splitSentence.join(" ");
+});
+};
 titleCased(tutorials);
